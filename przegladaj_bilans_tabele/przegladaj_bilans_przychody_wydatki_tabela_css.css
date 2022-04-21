@@ -1,0 +1,11 @@
+table{
+  display: inline-block;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+th{
+  background-color: pink;
+}

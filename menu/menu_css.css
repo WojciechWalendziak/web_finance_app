@@ -1,0 +1,21 @@
+form {
+  background-color: orange;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+button{
+  border: solid;
+  color: black;
+  background-color: yellow;
+  padding: 20px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: pink;
+}
