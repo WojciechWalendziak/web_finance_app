@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="dodaj_wydatek_css.css" type="text/css"/>
+  <script src="dodaj_wydatek_js.js"></script>
+</head>
+<tbody onload="current_date()">
+  <h1>Dodaj Wydatek:</h1>
+  <div id="form_field">
+    <form>
+      <label for="kwota">Kwota:</label><br>
+      <input type="text" id="kwota" name="kwota" placeholder="kwota"><br><br>
+    </form>
+    <form>
+      <label for="data">Data:</label><br>
+      <input type="date" id="date" name="date" placeholder="mm/dd/yyyy"><br><br>
+    </form>
+    <form>
+    <label for="category">Kategoria:</label><br>
+    <select name="karegoria" id="category"><br><br>
+      <option value="jedzenie">Jedzenie</option>
+      <option value="mieszkanie">Mieszkanie</option>
+      <option value="transport">Transport</option>
+      <option value="telekomunikacja">Telekomunikacja</option>
+      <option value="zdrowie">opieka zdrowotna</option>
+      <option value="ubrania">Ubrania</option>
+      <option value="dzieci">Dzieci</option>
+      <option value="higiena">Higiena</option>
+      <option value="rozrywka">Rozrywka</option>
+      <option value="wycieczki">Wycieczki</option>
+      <option value="sprzedaz_na_allegro">Szkolenia</option>
+      <option value="ksiazki">Ksiazki</option>
+      <option value="oszczednosci">Oszczednosci</option>
+      <option value="emerytura">Na zlota jesien czyli emeryture</option>
+      <option value="dlugi">Splata dlugow</option>
+      <option value="darowizny">Darowizny</option>
+      <option value="inne">Inne wydatki</option>
+    </select>
+    </form>
+    <div id="submit">
+      <input class="submit_button" type="submit" value="Submit">
+    </div>
+  </div>
+</tbody>
+
+</html>
+

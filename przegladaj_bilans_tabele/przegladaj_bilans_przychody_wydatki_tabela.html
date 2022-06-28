@@ -2,150 +2,167 @@
 <html>
 <head>
 <link rel="stylesheet" href="przegladaj_bilans_przychody_wydatki_tabela_css.css" type="text/css"/>
+<script src="przegladaj_bilans_tabele.js"></script>
 </head>
+<body>
 <div class="tables">
-<table>
-  <tr>
-    <th>Kategorie Przychodow</th>
-    <th>Kwoty</th>
-    <th>Daty</th>
-  </tr>
-  <tr>
-    <td>Wynagrodzenie</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Odsetki</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Sprzedaz na Allegro</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Inne</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-</table>
+  <div id="select_field">
+    <label for="period">Wybierz zakres:</label>
+    <select name="period" id="period" onchange="start()">
+      <option value="biezacy_miesiac">Biezacy_miesiac</option>
+      <option value="poprzedni_miesiac">Poprzedni_miesiac</option>
+      <option value="biezacy_rok">Biezacy_rok</option>
+      <option value="niestandardowy">Niestandardowy</option>
+    </select>
+  </div>
+  <div class="wrapper">
+    <div class="table_frame">
+      <table id="income_Table">
+        <tr>
+          <th>Kategorie Przychodow</th>
+          <th>Kwoty</th>
+          <th>Daty</th>
+        </tr>
+        <tr>
+          <td>Wynagrodzenie</td>
+          <td>100.5</td>
+          <td>11-04-2022</td>
+        </tr>
+        <tr>
+          <td>Odsetki</td>
+          <td>75.54</td>
+          <td>25-04-2022</td>
+        </tr>
+        <tr>
+          <td>Sprzedaz na Allegro</td>
+          <td>300.27</td>
+          <td>12-05-2020</td>
+        </tr>
+        <tr>
+          <td>Inne</td>
+          <td>156.75</td>
+          <td>18-05-2022</td>
+        </tr>
+      </table>
+    </div><div class="table_frame">
+      <table id="expence_Table">
+        <tr>
+          <th>Kategorie Wydatkow</th>
+          <th>Kwoty</th>
+          <th>Daty</th>
+          <th>Sposob platnosci</th>
+        </tr>
+        <tr>
+          <td>Jedzenie</td>
+          <td>123.55</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Mieszkanie</td>
+          <td>67.43</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Transport</td>
+          <td>98.55</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+       <td>Telekomunikacja</td>
+          <td>34.76</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Opieka zdrowotna</td>
+          <td>345.23</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Ubranie</td>
+          <td>235.15</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Higiena</td>
+          <td>155.52</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Dzieci</td>
+          <td>554.25</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Rozrywka</td>
+          <td>183.56</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>wycieczka</td>
+          <td>256.24</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Szkolenia</td>
+          <td>24.67</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Szkolenia</td>
+          <td>192.44</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Ksiazki</td>
+          <td>53.68</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Oszczednosci</td>
+          <td>873.17</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Na zlota jesien czyli emeryture</td>
+          <td>654.56</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Splata dlugow</td>
+          <td>523.54</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Darowizny</td>
+          <td>356.33</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      <tr>
+       <td>Inne wydatki</td>
+          <td>560.55</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 
-<table>
-  <tr>
-    <th>Kategorie Wydatkow</th>
-    <th>Kwoty</th>
-    <th>Daty</th>
-    <th>Sposob platnosci</th>
-  </tr>
-  <tr>
-    <td>Jedzenie</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Mieszkanie</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>Transport</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
- <td>Telekomunikacja</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Opieka zdrowotna</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Ubranie</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Higiena</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Dzieci</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Rozrywka</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>wycieczka</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Szkolenia</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Szkolenia</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Ksiazki</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Oszczednosci</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Na zlota jesien czyli emeryture</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Splata dlugow</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Darowizny</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-<tr>
- <td>Inne wydatki</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-</table>
 </div>
+</body>
